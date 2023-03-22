@@ -1,0 +1,53 @@
+//main: "../style.less"
+
+.intro {
+    background-color: #FAFBFD;
+    
+}
+.intro__container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 150px 15px 50px 15px;
+
+    @media (max-width: 759.98px) {
+        padding-top: 100px;
+    }
+    @media (max-width: 659.98px) {
+        padding-top: 80px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        right: 267px;
+        top: 0;
+        background-color: @red-btn;
+        border-radius: 20px 0px 0px 20px;
+        transform: translate(100%, 0px);
+
+        @media (max-width: 991.98px) {
+            right: 185px;
+        }
+        @media (max-width: 759.98px) {
+            right: 165px;
+        }
+        @media (max-width: 659.98px) {
+            width: 0;
+        }
+    }
+}
+
+.intro__img {
+    position: relative;
+    z-index: 2;
+    flex: 0 1 52%;
+
+    @media (max-width: 659.98px) {
+        flex: 1 1 100%;
+        padding-top: 25px;
+    }
+}
